@@ -12,7 +12,7 @@
 /***** FONTS *****/
 
 @font-face {
-  font-family: "Inter-Medium";
+  font-family: "Inter-Medium", sans-serif;
   font-style: Medium;
   font-weight: 400;
   src: url(/fonts/Inter-Medium.ttf) format("truetype");
@@ -21,7 +21,7 @@
 /***** STYLE *****/
 
 body {
-  font-family: "Inter-Medium", sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
   font-size: 20px;
   color: #252525;
   background: #faf5f6;
@@ -55,9 +55,25 @@ a {
   color: #252525;
   border-radius: 10px;
   padding: 0.5rem 1rem;
-  background-color: #6b6b6b41;
+  background-color: #82aaffec;
+  font-weight: 600;
 }
 
 .link:hover {
-  background-color: #6b6b6b23;
+  background-color: #82aaffea;
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .link {
+    font-size: 1rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .main-container {
+    padding: 3rem 2rem;
+  }
 }
