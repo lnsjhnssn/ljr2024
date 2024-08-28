@@ -23,23 +23,13 @@
 body {
   font-family: "Inter-Medium", sans-serif;
   font-size: 20px;
-  color: #f8f8f8;
-  background: -webkit-linear-gradient(-70deg, #459afb, #08212e, #64acff);
-  /* background-size: 400% 400%; */
-  /* animation: gradient 20s ease infinite; */
-  /* height: 100%;
-  width: 100%; */
+  color: #252525;
+  background: #faf5f6;
 }
 
 h1 {
   font-size: 2rem;
   margin: 0;
-}
-
-a {
-  color: #f8f8f8;
-  margin-bottom: 0.1rem;
-  display: block;
 }
 
 .main-container {
@@ -53,41 +43,21 @@ a {
   padding-bottom: 5rem;
 }
 
-.links {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+a {
+  text-decoration: none;
 }
 
-#spotify-link {
-  display: none;
+.link {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: #252525;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #6b6b6b41;
 }
 
-/* ------- Animation ------- */
-
-/* @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
-
-@media only screen and (max-width: 650px) {
-    
-  body {
-    background: black;
-  }
-
-  .playlist {
-    display: none;
-    }
-
-    #spotify-link {
-      display: block;
-    }
-  }
+.link:hover {
+  background-color: #6b6b6b23;
 }
